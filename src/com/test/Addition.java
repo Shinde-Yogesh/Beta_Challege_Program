@@ -6,6 +6,9 @@ public class Addition {
 		int b = 20;
 		System.out.println("The sum is : "+(a+b));
 		System.out.println("Trying to optimize the output...");
+
+		System.out.println("************************************");
+		System.out.println("New User Trying to add new comment");
 	}
 
 }
