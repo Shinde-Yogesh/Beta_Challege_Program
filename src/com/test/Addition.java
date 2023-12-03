@@ -11,7 +11,7 @@ public class Addition {
 		System.out.println("New User Trying to add new comment");
 
 		System.out.println("using the method");
-	System.out.println(result(10, 30);
+	System.out.println(result(10, 30));
 	}
 
 	public static int result(int a, int b)
