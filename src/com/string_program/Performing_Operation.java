@@ -1,23 +1,22 @@
 package com.string_program;
 
 public class Performing_Operation {
-	public static int finalValueAfterOperations(String[] operations) {
-
-		// ++X and X++ increments the value of the variable X by 1.
-		int value = 0;
-		for (String string : operations) {
-			if ((string == "X++") || (string == "++X")) {
-				value++;
-			} else if ((string == "X--") || (string == "--X")) {
-				value--;
-			}
-		}
-
-		return value;
-	}
+	 public static int finalValueAfterOperations(String[] operations) {
+	        int x = 0;
+	        for(String o : operations) x += (44 - o.charAt(1));
+	        return x;
+	    }
+	 public static int new_Approach(String[] operations) {
+	    	int val = 0;
+	    	for(int i=0;i<operations.length;i++) {
+	    		if(operations[i].charAt(1)=='+') val++;
+	    		else val--;
+	    	}
+	    	return val;        
+	    }
 
 	public static void main(String[] args) {
 		String array[] = { "--X","X++","X++" };
-		System.out.println(finalValueAfterOperations(array));
+		System.out.println(new_Approach(array));
 	}
 }
