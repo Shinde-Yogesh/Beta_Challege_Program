@@ -15,11 +15,8 @@ public class Count_The_Character {
 	
 	public static String reverse(String str)
 	{
-		String abc = "";
-		for(int i = str.length()-1; i>=0;i--)
-		{
-			abc += str.charAt(i);
-		}
-		return abc;
+		
+        StringBuffer sb = new StringBuffer(str);
+        return sb.reverse();
 	}
 }
