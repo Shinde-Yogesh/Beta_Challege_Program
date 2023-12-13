@@ -16,7 +16,10 @@ public class Count_The_Character {
 	public static String reverse(String str)
 	{
 		
-        StringBuffer sb = new StringBuffer(str);
-        return sb.reverse();
+        // StringBuffer sb = new StringBuffer(str);
+        // return sb.reverse();
+	// another approach thread safe
+	    StringBuilder builder = new StringBuilder(str);
+          return builder.reverse();
 	}
 }
