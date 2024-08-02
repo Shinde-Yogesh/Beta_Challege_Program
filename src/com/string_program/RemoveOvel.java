@@ -16,10 +16,8 @@ public class RemoveOvel {
 		output = str.replaceAll("[aeioAEIO]", " ");
 		System.out.println(output.trim());
 	}
-
 	public static void main(String[] args) {
 		String str = "aeio SM OEAEIO";
 		removeOvel(str);
 	}
-
 }
